@@ -1,0 +1,38 @@
+{
+  "name": "petsitter-project",
+  "version": "1.0.0",
+  "description": "project where pet sitters can be hired",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jaun Nothnagel",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.43.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "datatables.net-autofill-bs5": "^2.7.0",
+    "datatables.net-bs5": "^2.0.8",
+    "datatables.net-buttons-bs5": "^3.0.2",
+    "datatables.net-fixedcolumns-bs5": "^5.0.0",
+    "datatables.net-fixedheader-bs5": "^4.0.1",
+    "datatables.net-responsive-bs5": "^3.0.2",
+    "datatables.net-searchbuilder-bs5": "^1.7.1",
+    "datatables.net-searchpanes-bs5": "^2.3.0",
+    "datatables.net-select-bs5": "^2.0.3",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.13",
+    "passport": "^0.7.0",
+    "pdfmake": "^0.2.10",
+    "twilio": "^5.0.4"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.7"
+  }
+}

@@ -1,0 +1,123 @@
+<%-include("__header")%>
+<script>
+    // Use JSON.stringify to convert the data to a JSON string
+    var processedData = <%- JSON.stringify(processedData).replace(/<\/script>/g, '<\\/script>').replace(/<!--/g, '<\\!--') %>;
+
+    // Log the data to the console for debugging
+    // console.log('Processed Data:', processedData)
+</script>
+<h1 class="d-flex justify-content-center">NSR Admin Portal</h1>
+<%-include("__logoAndNavAdminInProgressRequests")%>
+<h1 class="testimonialHeader d-flex justify-content-center py-3 ">Requests in Progress:</h1>
+<div class="hr-container d-flex justify-content-center">
+    <hr class="gradient-hr-admin-heading">
+ </div>
+
+<!-- display records in datagrid -->
+<div class="container-fluid mt-2">
+ <div class="table-responsive">
+  <table id="serviceRequests" class="table table-bordered table-striped nowrap">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Cell</th>
+            <th>Address</th>
+            <th>Suburb</th>
+            <th>City</th>
+            <th>Requests</th>
+            <th>Date Created</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% processedData.forEach(function(row) { %>
+            <tr>
+                <td><%= row.id %></td>
+                <td contenteditable="true"><%= row.first_name %></td>
+                <td contenteditable="true"><%= row.last_name %></td>
+                <td contenteditable="true"><%= row.email %></td>
+                <td contenteditable="true"><%= row.cell %></td>
+                <td contenteditable="true"><%= row.address %></td>
+                <td contenteditable="true"><%= row.suburb %></td>
+                <td contenteditable="true"><%= row.city %></td>
+                <td contenteditable="true"><%= row.requests %></td>
+                <td><%= row.date_created %></td>
+                <td>
+                    <select class="status-select">
+                        <option value="pending"<%=row.status === 'pending' ? 'selected': ''%>>Pending</option>
+                        <option value="in_progress" <%=row.status === 'in_progress' ? 'selected': ''%>>In Progres</option>
+                        <option value="completed" <%=row.status === 'completed' ? 'selected': ''%>>Completed</option>
+                        <option value="invoiced" <%=row.status === 'invoiced' ? 'selected': ''%>>Invoiced</option>
+                    </select>
+                </td>
+                <td>
+                  <button class="btn btn-success save-row" data-id="<%= row.id %>"><i class="fa-solid fa-floppy-disk" style="color: #e6e6e6;"></i></button>
+                  <button class="btn btn-primary view-services" data-bs-toggle="modal" data-bs-target="#servicesModal" data-id="<%= row.id %>"><i class="fa-solid fa-wrench" style="color: #e6e6e6;"></i></button>
+                  <button class="btn btn-secondary view-referral" data-bs-toggle="modal" data-bs-target="#referralModal" data-id="<%= row.id %>"><i class="fa-solid fa-face-grin" style="color: #e6e6e6;"></i></button>
+                  <button class="btn btn-danger delete-row" data-id="<%= row.id %>"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></button>
+                </td>
+              
+              </tr>
+        <% }) %>
+    </tbody>
+</table>
+ </div>
+ <!-- modal to display services -->
+<!-- Modal -->
+<div class="modal fade" id="servicesModal" tabindex="-1" aria-labelledby="servicesModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <!-- form goes here -->
+          <form action="#" method="post">
+            <div class="row">
+              <div class="col-12" >
+                <h3 class="mb-2 mt-2" for="heading">Services Requested:</h3>
+                <p class="form-control" type="text" id="pServicesRequested">
+                   
+                </p>
+              </div>
+            </div>
+           
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  
+          </form>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <!-- modal to display referral -->
+<!-- Modal -->
+<div class="modal fade" id="referralModal" tabindex="-1" aria-labelledby="referralModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <!-- form goes here -->
+        <form action="#" method="post">
+          <div class="row">
+            <div class="col-12" >
+              <h3 class="mb-2 mt-2" for="heading">Referred By:</h3>
+              <p class="form-control" type="text" id="pReferredBy">
+                 
+              </p>
+            </div>
+          </div>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </form>
+      </div>
+     
+    </div>
+  </div>
+</div>
+</div>
+     
+
+<%-include("__footer")%>

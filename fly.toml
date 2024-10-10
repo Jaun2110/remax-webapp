@@ -1,0 +1,37 @@
+# fly.toml app configuration file generated for nsr-pro-construction on 2024-07-25T00:04:43+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'nsr-pro-construction'
+primary_region = 'jnb'
+
+[build]
+dockerfiole = "Dockerfile"
+ignorefile  = ".dockerignore"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+  [env]
+  SUPABASE_URL='https://uurxrpllqveasuvnxuns.supabase.co'
+SUPABASE_API_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1cnhycGxscXZlYXN1dm54dW5zIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcxNTg0NDc2OCwiZXhwIjoyMDMxNDIwNzY4fQ.RW8OqfGmlaBxxh0qysjG1GIxMuEl_znWq9R7FAxcDCI'
+SESSION_SECRET ="TOPSECRETWORD"
+
+
+EMAIL_USER='info@nsrpro.co.za'
+EMAIL_PASSWORD='Provider@123!'
+EXCHANGE_HOST='smtp.office365.com'  # Commonly used for Office 365 and Exchange Online
+EXCHANGE_PORT='587'  # Standard port for SMTP with TLS
+
+
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1

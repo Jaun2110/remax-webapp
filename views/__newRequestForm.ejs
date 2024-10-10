@@ -1,0 +1,564 @@
+<form  class="needs-validation" id="quote" novalidate action="/newServiceRequest" method="post">
+    
+   
+    <div class="row">
+        <h4 class="mt-2" >Pick your required service:</h4>
+        <hr class="gradient-hr mb-2">
+
+        <div class="col-md-4 col-sm-12">
+            <h4 style="text-decoration: underline;">Construction:</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxSingeleHomePoject" 
+                name="singeleHomePoject" value="Single Home Project">
+                <label class="form-check-label" for="checkboxSingeleHomePoject">
+                    SINGLE HOME PROJECT
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxAdditionToHome"
+                name="additionToHome" value="Addition To Home">
+                <label class="form-check-label" for="checkboxAdditionToHome">
+                ANY ADDITIONS TO HOMES
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxResidentialComplexHousing"
+                name="residentialComplexHousing" value="Residential ComplexHousing">
+                <label class="form-check-label" for="checkboxResidentialComplexHousing">
+                RESIDENTIAL COMPLEX HOUSING
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxNewIndustrialBuilding"
+                name="newIndustrialBuilding" value="New Industrial Building" >
+                <label class="form-check-label" for="checkboxNewIndustrialBuilding">
+                    NEW INDUSTRIAL BUILDINGS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxOfficeBlocks"
+                name="officeBlocks" value="Office Blocks">
+                <label class="form-check-label" for="checkboxOfficeBlocks">
+                    OFFICE BLOCKS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxOfficeRenovations"
+                name="officeRenovations" value="Office Renovations">
+                <label class="form-check-label" for="checkboxOfficeRenovations">
+                    OFFICE RENOVATIONS
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h4 style="text-decoration: underline;">Electrical:</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxAutomatedGates" 
+                name="automatedGates" value="Automated Gates">
+                <label class="form-check-label" for="checkboxAutomatedGates">
+                    AUTOMATED GATES
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxJacuzzi&Pool"
+                name="jacuzziAndPool" value="Jacuzzi & Pool">
+                <label class="form-check-label" for="checkboxJacuzzi&Pool">
+                    JACUZZIS & POOLS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxEarthing&LightningProtection"
+                name="earthingAndLightningProtection" value="Earthing & Lightning Protection">
+                <label class="form-check-label" for="checkboxEarthing&LightningProtection">
+                    EARTHING & LIGHTNING PROTECTION
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxAutomatingGarageDoors"
+                name="automatingGarageDoors" value="Automating Garage Doors" >
+                <label class="form-check-label" for="checkboxAutomatingGarageDoors">
+                    AUTOMATED GARAGE DOORS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxAirconditioning&CCTV"
+                name="airconditioningAndCCTV" value="Airconditioning & CCTV">
+                <label class="form-check-label" for="checkboxAirconditioning&CCTV">
+                    AIRCONDITIONING & CCTV
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxPowerSavingAnalysis"
+                name="powerSavingAnalysis" value="Power Saving Analysis">
+                <label class="form-check-label" for="checkboxPowerSavingAnalysis">
+                    POWER SAVING ANALYSIS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxGenerator"
+                name="generator" value="Generator">
+                <label class="form-check-label" for="checkboxGenerator">
+                    GENERATORS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxPowerHousholdAppliances"
+                name="housholdAppliances" value="HousholdAppliances">
+                <label class="form-check-label" for="checkboxPowerHousholdAppliances">
+                    HOUSEHOLD APPLIANCES
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxInverterSystems"
+                name="inverterSystems" value="Inverter Systems">
+                <label class="form-check-label" for="checkboxInverterSystems">
+                    INVERTER SYSTEMS
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h4 style="text-decoration: underline;">Painting:</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxHousePainting" 
+                name="housePainting" value="House Painting">
+                <label class="form-check-label" for="checkboxHousePainting">
+                    HOUSE PAINTING
+
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxGarageDoorPainting"
+                name="garageDoorPainting" value="Garage Door Painting">
+                <label class="form-check-label" for="checkboxGarageDoorPainting">
+                    GARAGE DOOR PAINTING
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxRoofPainting"
+                name="roofPainting" value="Roof Painting">
+                <label class="form-check-label" for="checkboxRoofPainting">
+                    ROOF PAINTING
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxBoundryWalls"
+                name="boundryWalls" value="Boundry Walls" >
+                <label class="form-check-label" for="checkboxBoundryWalls">
+                    BOUNDARY WALLS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxConcreteSpallingRepair"
+                name="concreteSpallingRepair" value="Concrete Spalling Repair">
+                <label class="form-check-label" for="checkboxConcreteSpallingRepair">
+                    CONCRETE SPALLING REPAIR
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxCommercialPainting"
+                name="commercialPainting" value="Commercial Painting">
+                <label class="form-check-label" for="checkboxCommercialPainting">
+                    COMMERCIAL PAINTING
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxWoodenDecks"
+                name="woodenDecks" value="Wooden Decks">
+                <label class="form-check-label" for="checkboxWoodenDecks">
+                    WOODEN DECKS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxEpoxyFloorPainting"
+                name="epoxyFloorPainting" value="Epoxy Floor Painting">
+                <label class="form-check-label" for="checkboxEpoxyFloorPainting">
+                    EPOXY FLOOR PAINTING
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxHighPressureCleaning"
+                name="highPressureCleaning" value="High Pressure Cleaning">
+                <label class="form-check-label" for="checkboxHighPressureCleaning">
+                    HIGH-PRESSURE CLEANING
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h4 style="text-decoration: underline;">Plumbing:</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxBathroomRenovation" 
+                name="bathroomRenovation" value="Bathroom Renovation">
+                <label class="form-check-label" for="checkboxBathroomRenovation">
+                    BATHROOM RENOVATIONS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxStormWaterDrainage"
+                name="stormWaterDrainage" value="Storm Water Drainage">
+                <label class="form-check-label" for="checkboxStormWaterDrainage">
+                    STORM WATER DRAINAGE
+
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxBlockageRemovals"
+                name="blockageRemovals" value="Blockage Removals">
+                <label class="form-check-label" for="checkboxBlockageRemovals">
+                    BLOCKAGE REMOVALS
+
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxHotAndColdWater"
+                name="hotAndColdWater" value="Hot And Cold Water" >
+                <label class="form-check-label" for="checkboxHotAndColdWater">
+                    HOT & COLD WATER
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxRainWaterTanks"
+                name="rainWaterTanks" value="Rain Water Tanks">
+                <label class="form-check-label" for="checkboxRainWaterTanks">
+                    RAINWATER TANKS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxSwimmingPoolPlumbing"
+                name="swimmingPoolPlumbing" value="Swimming Pool Plumbing">
+                <label class="form-check-label" for="checkboxSwimmingPoolPlumbing">
+                    SWIMMING POOL PLUMBING
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxSewerageServices"
+                name="sewerageServices" value="Sewerage Services">
+                <label class="form-check-label" for="checkboxSewerageServices">
+                    SEWERAGE SERVICES
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxSolarGeysers"
+                name="solarGeysers" value="Solar Geysers">
+                <label class="form-check-label" for="checkboxSolarGeysers">
+                    SOLAR GEYSERS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxSubmersible&HeatPumps"
+                name="submersibleAndHeatPumps" value="Submersible & Heat Pumps">
+                <label class="form-check-label" for="checkboxSubmersible&HeatPumps">
+                    SUBMERSIBLE & HEAT PUMPS
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h4 style="text-decoration: underline;">Renovations & Maintenance:</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxHandymanServices" 
+                name="handymanServices" value="Handyman Services">
+                <label class="form-check-label" for="checkboxHandymanServices">
+                    HANDYMAN SERVICES
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxCarpetryServices"
+                name="carpentryServices" value="Carpentry Services">
+                <label class="form-check-label" for="checkboxCarpetryServices">
+                    CARPENTRY SERVICES
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxPavingServices"
+                name="pavingServices" value="Paving Services">
+                <label class="form-check-label" for="checkboxPavingServices">
+                    PAVING SERVICES
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxRoofRepairs"
+                name="roofRepairs" value="Roof Repairs" >
+                <label class="form-check-label" for="checkboxRoofRepairs">
+                    ROOF REPAIRS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxWaterproofing"
+                name="waterproofing" value="Waterproofing">
+                <label class="form-check-label" for="checkboxWaterproofing">
+                    WATERPROOFING
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxDeckRepairs"
+                name="deckRepairs" value="Deck Repairs">
+                <label class="form-check-label" for="checkboxDeckRepairs">
+                    DECK REPAIRS
+
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxTilingServices"
+                name="tilingServices" value="Tiling Services">
+                <label class="form-check-label" for="checkboxTilingServices">
+                    TILING SERVICES
+
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h4 style="text-decoration: underline;">Roofing & Waterproofing:</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxRoofRepairs" 
+                name="roofRepairs" value="Roof Repairs">
+                <label class="form-check-label" for="checkboxRoofRepairs">
+                    ROOF REPAIRS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxRoofWaterproofing"
+                name="roofWaterproofing" value="Roof Waterproofing">
+                <label class="form-check-label" for="checkboxRoofWaterproofing">
+                    ROOF WATERPROOFING
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h4 style="text-decoration: underline;">Solar:</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxSolarPower" 
+                name="solarPower" value="Solar Power">
+                <label class="form-check-label" for="checkboxSolarPower">
+                    SOLAR POWER – Grid-tied, off-grid and hybrid solutions
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxSolarPumps"
+                name="solarPumps" value="Solar Pumps">
+                <label class="form-check-label" for="checkboxSolarPumps">
+                    SOLAR PUMPS – AC and DC solar pumps
+
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxSolarWaterHeating"
+                name="solarWaterHeating" value="Solar Water Heating">
+                <label class="form-check-label" for="checkboxSolarWaterHeating">
+                    SOLAR WATER HEATING – Convert your existing geyser to solar
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h4 style="text-decoration: underline;">Real Estate - Premium Homes:</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxPropertySales" 
+                name="propertySales" value="Property Sales">
+                <label class="form-check-label" for="checkboxPropertySales">
+                    PROPERTY SALES
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxPropertyRentals"
+                name="propertyRentals" value="Property Rentals">
+                <label class="form-check-label" for="checkboxPropertyRentals">
+                    PROPERTY RENTALS
+
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxPropertyEvaluations"
+                name="properytEvaluations" value="Property Evaluations">
+                <label class="form-check-label" for="checkboxPropertyEvaluations">
+                    PROPERTY EVALUATIONS
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h4 style="text-decoration: underline;">IT Services:</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxWebDevelopment" 
+                name="webDevelopment" value="Web Development">
+                <label class="form-check-label" for="checkboxWebDevelopment">
+                   WEB DEVELOPMENT
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxAntivirusSolutions"
+                name="antivirusSolutions" value="Antivirus Solutions">
+                <label class="form-check-label" for="checkboxAntivirusSolutions">
+                    ANTIVIRUS SOLUTIONS
+
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxInternetSecurityTools"
+                name="internetSecurityTools" value="Internet Security Tools">
+                <label class="form-check-label" for="checkboxInternetSecurityTools">
+                    INTERNET SECURITY TOOLS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxEssentialSoftware"
+                name="essentialSoftware" value="Essential Software">
+                <label class="form-check-label" for="checkboxEssentialSoftware">
+                    ESSENTIAL SOFTWARE - MICROSOFT OFFICE ETC.
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h4 style="text-decoration: underline;">Accounting Services - Bean Counters:</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxCompilationOfFinancialStatementsSmeAndIfrs" 
+                name="compilationOfFinancialStatementsSmeAndIfrs" value="Compilation Of Financial Statements SME And IFRS">
+                <label class="form-check-label" for="checkboxCompilationOfFinancialStatementsSmeAndIfrs">
+                    COMPILATION OF FINANCIAL STATEMENTS SME AND IFRS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxMonthlyProcessingOfFinancialRecords"
+                name="," value="Monthly Processing Of Financial Records">
+                <label class="form-check-label" for="checkboxMonthlyProcessingOfFinancialRecords">
+                    MONTHLY PROCESSING OF FINANCIAL RECORDS
+
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxConsulting"
+                name="consulting" value="Consulting">
+                <label class="form-check-label" for="checkboxConsulting">
+                    CONSULTING
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxTax"
+                name="tax" value="Tax">
+                <label class="form-check-label" for="checkboxTax">
+                    TAX
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxPayrollServices"
+                name="payrollServices" value="Payroll Services">
+                <label class="form-check-label" for="checkboxPayrollServices">
+                    PAYROLL SERVICES
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxCipcCompanyRegistrations"
+                name="cipcCompanyRegistrations" value="Cipc Company Registrations">
+                <label class="form-check-label" for="checkboxCipcCompanyRegistrations">
+                    CIPC COMPANY REGISTRATIONS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxSarsCompliance"
+                name="sarsCompliance" value="Sars Compliance">
+                <label class="form-check-label" for="checkboxSarsCompliance">
+                    SARS COMPLIANCE
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxCloudAccountingServices"
+                name="cloudAccountingServices" value="Cloud Accounting Services">
+                <label class="form-check-label" for="checkboxCloudAccountingServices">
+                    CLOUD ACCOUNTING SOLUTIONS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxTaxPractitionerServices"
+                name="taxPractitionerServices" value="Tax Practitioner Services">
+                <label class="form-check-label" for="checkboxTaxPractitionerServices">
+                    TAX PRACTITIONER SERVICES
+                </label>
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <h4 class="mt-2" >Fill out your details below:</h4>
+        <hr class="gradient-hr mb-2">
+           
+            <div class="col-md-4 col-sm-12">
+                <label class="mb-2 mt-2" for="name">Name:</label>
+                <input  class="form-control" type="text" id="firstname" name="firstname" placeholder="First Name" required>
+                
+            </div>
+          
+           <div class="col-md-4 col-sm-12">
+            <label for="firstname" class="invisible mt-2 mb-2">2</label>
+            <input  class="form-control" type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+           </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <label class="mb-2 mt-2" for="email">Email:</label>
+                <input  class="form-control" type="email" name="email" id="email" required>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <label class="mb-2 mt-2" for="phone">Cell:</label>
+                <input  class="form-control" type="tel" name="phone" id="phone" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <label class="mb-2 mt-2" >Address:</label>
+                <input class="form-control mb-2" type="text" id="street" name="street" placeholder="street number and name" required>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <label class="mb-2 mt-2" for="suburb" >Suburb:</label>
+                <input class="form-control mb-2" type="text" id="suburb" name="suburb" placeholder="suburb" required>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <label class="mb-2 mt-2" for="city" >City:</label>
+                <input class="form-control mb-2" type="text" id="city" name="city" placeholder="city" required>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <label class="mb-2 mt-2" for="referral">Who referred you to us?</label>
+            <select class="form-select mb-2" name="referralPerson" id="referralPerson" required onchange="showReferralBox() ">
+                <option value="">Select</option>
+                <option value="Niel Roberts">Niel Roberts</option>
+                <option value="Steph Roberts">Steph Roberts</option>
+                <option value="Jano Nothnagel">Jano Nothnagel</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="col-md-12 col-sm-12 otherReferralDiv "hidden>
+            <label class="mt-2 mb-2" for="otherReferral"> Enter the details below:</label>
+            <input class="form-control " type="text" id="otherReferral" name="otherReferral">
+        </div>
+
+        <div class="col-md-12 col-sm-12">
+            <label class="mt-2 mb-2" for="notes">Notes about what needs to be done:</label>
+            <textarea class="form-control mb-2" name="notes" id="notes" oninput="getCount()" maxlength="300"></textarea>
+            <label id="charCount">0 of 300 characters</label>
+            <button type="submit" class="btn btn-maroon py-2 mb-2">
+                <span class="buttonText">Submit</span>
+                <!-- add loader -->
+                <div class="loader spinner-border text-light " hidden onclick="showLoader()" role="status">
+                </div>
+            </button>
+        </div>
+        
+        
+
+    </div>
+    <!-- modal to be displayed on form submission -->
+    <div class="modal fade" id="serviceRequestModal" tabindex="-1" role="dialog" aria-labelledby="serviceRequestModalLabel" area-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceRequestModalLabel">Service Request Confirmation</h5>
+                       
+                </div>
+                <div class="modal-body">
+                    Your service request has been sent successfully.You will be contacted shortly.
+                </div>
+                <div class="modal-footer">
+                    <a type="button" href="/" class="btn btn-secondary" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</form>
