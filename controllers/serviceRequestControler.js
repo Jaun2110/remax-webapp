@@ -1,4 +1,5 @@
 import supabase from "../config/supabaseClient.js";
+import db from "../config/postgres.js";
 import transporter from "../config/emailer.js"
 import { getYear } from "../utils/dateUtils.js";
 import { name } from "ejs";
@@ -6,11 +7,9 @@ import { name } from "ejs";
 export const renderHomePage = async(req, res) =>{
 
     try {
-        const {data, error} = await supabase.from('project_carousal')
-        .select('*')
-        // console.log(data);
+        const {data, error} = await db.query("select * from project_carousal")
         if (error){throw error,error.message}
-        const carousalData = data.map(image =>{
+        const carousalData = data.rows.map(image =>{
             return{
                 heading: image.heading,
                 url: image.imageurl
@@ -32,13 +31,12 @@ export const renderHomePage = async(req, res) =>{
     // testimonial fetch from db
  try
  {
- const {data, error} = await supabase
- .from("testimonials").select("heading, content")
+ const {data, error} = await db.query("select heading, content from testimonials")
  
  if (error) {
     throw new Error(error.message);
 }
- return data.map(item =>({
+ return data.rows.map(item =>({
     heading: item.heading,
     content: item.content,
 }) )

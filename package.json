@@ -5,7 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon index.js",
+    "prod": "node index.js"
+    
   },
   "author": "Jaun Nothnagel",
   "license": "ISC",
@@ -30,6 +33,7 @@
     "nodemailer": "^6.9.13",
     "passport": "^0.7.0",
     "pdfmake": "^0.2.10",
+    "pg": "^8.13.0",
     "twilio": "^5.0.4"
   },
   "devDependencies": {
